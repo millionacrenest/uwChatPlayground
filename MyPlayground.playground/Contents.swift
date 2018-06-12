@@ -37,6 +37,14 @@ struct Level: ScoreConvertible {
     }
 }
 
+extension Array: ScoreConvertible where Element: ScoreConvertible {
+    
+    func computeScore() -> Int {
+        return reduce(0) { result, element in
+            result + element.computeScore()
+        }
+    }
+}
 
 
 let levels = [Level(id: "water-0"), Level(id: "water-1")]
@@ -51,14 +59,7 @@ let worlds = [
 let totalScore = worlds.computeScore()
     
 
-extension Array: ScoreConvertible where Element: ScoreConvertible {
-    
-    func computeScore() -> Int {
-        return reduce(0) { result, element in
-            result + element.computeScore()
-        }
-    }
-}
+
 
 
 //////////
