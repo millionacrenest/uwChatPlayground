@@ -3,12 +3,17 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/amcentire/Desktop/MyPlayground.playground#CharacterRangeLen=84&amp;CharacterRangeLoc=617&amp;EndingColumnNumber=0&amp;EndingLineNumber=31&amp;StartingColumnNumber=16&amp;StartingLineNumber=28&amp;Timestamp=550452013.175378"
+         documentLocation = "file:///Users/amcentire/Desktop/presentations/iosPlayground/MyPlayground.playground#CharacterRangeLen=84&amp;CharacterRangeLoc=1061&amp;EndingColumnNumber=2&amp;EndingLineNumber=58&amp;StartingColumnNumber=8&amp;StartingLineNumber=56&amp;Timestamp=550522055.80374"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/amcentire/Desktop/MyPlayground.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=469&amp;EndingColumnNumber=10&amp;EndingLineNumber=23&amp;StartingColumnNumber=5&amp;StartingLineNumber=23&amp;Timestamp=550452013.1755151"
+         documentLocation = "file:///Users/amcentire/Desktop/presentations/iosPlayground/MyPlayground.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=891&amp;EndingColumnNumber=43&amp;EndingLineNumber=47&amp;StartingColumnNumber=43&amp;StartingLineNumber=47&amp;Timestamp=550522055.803889"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/amcentire/Desktop/presentations/iosPlayground/MyPlayground.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=891&amp;EndingColumnNumber=43&amp;EndingLineNumber=47&amp;StartingColumnNumber=43&amp;StartingLineNumber=47&amp;Timestamp=550522055.803992"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
