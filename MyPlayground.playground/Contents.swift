@@ -3,7 +3,7 @@
 import UIKit
 import Foundation
 
-
+/////// Equatable, Hashable
 
 struct Person: Equatable, Hashable {
     var firstName: String
@@ -24,7 +24,46 @@ paul.hashValue
 joanne.hashValue
 
 
-/////////////
+///////////// Codable key stratagies
+
+
+struct Mac: Codable {
+    var name: String
+    var screenSize: Int
+    var cpuCount: Int
+}
+
+
+let jsonString = """
+[
+{
+"name": "MacBook Pro",
+"screen_size": 15,
+"cpu_count": 4
+},
+{
+"name": "iMac Pro",
+"screen_size": 27,
+"cpu_count": 18
+}
+]
+"""
+
+let jsonData = Data(jsonString.utf8)
+
+let decoder = JSONDecoder()
+
+do {
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    let macs = try decoder.decode([Mac].self, from: jsonData)
+    print(macs)
+} catch {
+    print(error.localizedDescription)
+}
+
+
+
+///////////// Conditional Conformance
 
 protocol ScoreConvertible {
     func computeScore() -> Int
@@ -57,12 +96,9 @@ let worlds = [
 ]
     
 let totalScore = worlds.computeScore()
-    
 
 
-
-
-//////////
+////////// Recursive Constraints
 
 protocol Employee {
     associatedtype Manager: Employee
@@ -80,5 +116,6 @@ class SeniorDeveloper: Employee {
 class JuniorDeveloper: Employee {
     var manager: SeniorDeveloper?
 }
+
 
 
